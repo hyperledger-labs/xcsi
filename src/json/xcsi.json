@@ -1,20 +1,21 @@
 {
-        "Header": {
+    "Header": {
             "_comment": "Header describes message: Digital Signature is of the message hash, signed by the attesting authority",
             "timeStamp": "Secure time stamp ANSI ASC X9.95 Standard",
             "messageType": "XCSI",
             "messageID": "generated UUID",
             "messageSign":"DigitalSignature from Origin"
-        },
-         "fromChain": {
+    },
+    
+    "fromChain": {
             "name": "name of chain in CNS or Chain Name Service (URL)vs URI vs IP Address, use LEI, IPV6, IPFS ()",
             "transactionID": "TransactionID-identity", 
             "_comment":"overrides or supplements the original, settlement may be a composite", 
             "referenceContract": {
                 "contractType": "DLPC|CDM|Other",
                 "contractID": "uniquecontractid- can be DLPCID|CDMID|"
-           }            
-        },
+        }            
+    },
     
     "payment": {
         "amount": "numeric payment amount",
@@ -46,5 +47,3 @@
     
     }
 }
-
-
