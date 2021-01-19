@@ -5,6 +5,9 @@ The aim of the lab is to create a cross chain settlement instruction. Many chain
 
 We are transport agnostic. All message encryption as well as at rest (if needed) is outside the scope of this lab.
 
+## Important Ideas
+The message is free-standing. Just the contents of the message is enough to make sense. This is in both in terms of the data itself as well as the cryptographic integrity. More similar to the concept of credentials. External witnesses are important, 1. public cryptographic integrity related to identity (DPKI etc.) 2. A way to agree on what is being transacted (the assets, the payment rails) using a public "registry" or a discovery mechanism. 
+
 ## Structure
 
 JSON files that define the message are in src/json
